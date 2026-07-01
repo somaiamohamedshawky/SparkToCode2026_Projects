@@ -83,14 +83,14 @@ namespace Task1
 
             ////////////////////////////////////////////////////////////////////
             ////Task 4 - Voting Eligibility
-            //Console.WriteLine("ENTER Age");
-            //double age = double.Parse(Console.ReadLine());
-            //Console.WriteLine(" a valid national ID (true/false)");
-            //bool validNationl =bool.Parse( Console.ReadLine());
-            //if(age>=18 && validNationl==true)
-            //{
-            //    Console.WriteLine("person eligible to vote");
-            //}
+            Console.WriteLine("ENTER Age");
+            double age = double.Parse(Console.ReadLine());
+            Console.WriteLine(" a valid national ID (true/false)");
+            bool validNationl = bool.Parse(Console.ReadLine());
+            if (age >= 18 && validNationl == true)
+            {
+                Console.WriteLine("person eligible to vote");
+            }
 
 
 
