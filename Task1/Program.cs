@@ -43,50 +43,54 @@ namespace Task1
             //else { Console.WriteLine("the numbers is odd"); }
 
             /////////////////////////////////////////////////
-            ////Task 5 - Grade Letter Lookup
-            //Console.WriteLine("enter character");
-            //char option = char.Parse(Console.ReadLine());
-            //bool exist = false;
-            //while(exist==false)
-            //{
-            //    switch (option)
-            //    {
-            //        case 'A':
-            //            Console.WriteLine("Excellent");
-            //            break;
+            //Task 5 - Grade Letter Lookup
+            Console.WriteLine("enter character");
+            char option = char.Parse(Console.ReadLine());
+            bool exist = false;
+            while (exist == false)
+            {
+                switch (option)
+                {
+                    case 'A':
+                        Console.WriteLine("Excellent");
+                        break;
 
-            //        case 'B':
-            //            Console.WriteLine("VERY GOOD");
-            //            break;
-            //        case 'C':
-            //            Console.WriteLine("GOOD");
-            //            break;
-            //        case 'D':
-            //            Console.WriteLine("PASS");
-            //            break;
-            //        case 'F':
-            //            Console.WriteLine("FAIL");
-            //            break;
-            //        default:
-            //            Console.WriteLine("invalid grade");
-            //            break;
+                    case 'B':
+                        Console.WriteLine("VERY GOOD");
+                        break;
+                    case 'C':
+                        Console.WriteLine("GOOD");
+                        break;
+                    case 'D':
+                        Console.WriteLine("PASS");
+                        break;
+                    case 'F':
+                        Console.WriteLine("FAIL");
+                        break;
+                    case 'X':
+                        Console.WriteLine("EXIST");
+                        exist = true;
+                        break;
+                    default:
+                        Console.WriteLine("invalid grade");
+                        break;
 
-            //    }
+                }
 
-            //     exist = true;  
+                
 
-            //}
+            }
 
             ////////////////////////////////////////////////////////////////////
-            //Task 4 - Voting Eligibility
-            Console.WriteLine("ENTER Age");
-            double age = double.Parse(Console.ReadLine());
-            Console.WriteLine(" a valid national ID (true/false)");
-            bool validNationl =bool.Parse( Console.ReadLine());
-            if(age>=18 && validNationl==true)
-            {
-                Console.WriteLine("person eligible to vote");
-            }
+            ////Task 4 - Voting Eligibility
+            //Console.WriteLine("ENTER Age");
+            //double age = double.Parse(Console.ReadLine());
+            //Console.WriteLine(" a valid national ID (true/false)");
+            //bool validNationl =bool.Parse( Console.ReadLine());
+            //if(age>=18 && validNationl==true)
+            //{
+            //    Console.WriteLine("person eligible to vote");
+            //}
 
 
 
