@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.Metrics;
 
 namespace Task1
 {
@@ -19,32 +20,69 @@ namespace Task1
 
             ///////////////////////////////
 
-            //Task 2 - Rectangle Calculator
-            Console.WriteLine("plese enter lenght");
-            double length = double.Parse(Console.ReadLine());
-            Console.WriteLine("plese enter width");
-            double width = double.Parse(Console.ReadLine());
+            ////Task 2 - Rectangle Calculator
+            //Console.WriteLine("plese enter lenght");
+            //double length = double.Parse(Console.ReadLine());
+            //Console.WriteLine("plese enter width");
+            //double width = double.Parse(Console.ReadLine());
 
-            double area = length * width;
-            Console.WriteLine("area :" + area);
-            double perimeter = 2 * (length + width);
-            Console.WriteLine("perimeter : "+ perimeter);
+            //double area = length * width;
+            //Console.WriteLine("area :" + area);
+            //double perimeter = 2 * (length + width);
+            //Console.WriteLine("perimeter : "+ perimeter);
+            ///////////////////////////////////////////////
 
-            //Task 3 - Even or Odd Checker
-            Console.WriteLine("enter the number ");
-            int result = int.Parse(Console.ReadLine());
-            int check = result % 2;
-            if ( check == 0)
+            ////Task 3 - Even or Odd Checker
+            //Console.WriteLine("enter the number ");
+            //int result = int.Parse(Console.ReadLine());
+            //int check = result % 2;
+            //if (check == 0)
+            //{
+            //    Console.WriteLine("the number is event");
+            //}
+            //else { Console.WriteLine("the numbers is odd"); }
+
+            /////////////////////////////////////////////////
+            //Task 5 - Grade Letter Lookup
+            Console.WriteLine("enter character");
+            char option = char.Parse(Console.ReadLine());
+           // bool exist = false;
+            //while(exist==false)
+            switch (option)
             {
-               Console.WriteLine("the number is event");
+                case 'A':
+                    Console.WriteLine("Excellent");
+                    break;
+
+                case 'B':
+                    Console.WriteLine("VERY GOOD");
+                    break;
+                case 'C':
+                    Console.WriteLine("GOOD");
+                    break;
+                case 'D':
+                    Console.WriteLine("PASS");
+                    break;
+                case 'F':
+                    Console.WriteLine("FAIL");
+                    break;
+                default:
+                    Console.WriteLine("invalid grade");
+                    break;
+
+
+
+                    Console.WriteLine("press any key to continue");
+                    string key = Console.ReadLine();
+
             }
-            else { Console.WriteLine("the numbers is odd"); }
-
-
-
-
-
-
         }
+
+
+
+
     }
+
 }
+    
+
