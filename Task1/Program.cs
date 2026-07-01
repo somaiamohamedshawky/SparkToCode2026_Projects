@@ -46,36 +46,39 @@ namespace Task1
             //Task 5 - Grade Letter Lookup
             Console.WriteLine("enter character");
             char option = char.Parse(Console.ReadLine());
-           // bool exist = false;
-            //while(exist==false)
-            switch (option)
+            bool exist = false;
+            while(exist==false)
             {
-                case 'A':
-                    Console.WriteLine("Excellent");
-                    break;
+                switch (option)
+                {
+                    case 'A':
+                        Console.WriteLine("Excellent");
+                        break;
 
-                case 'B':
-                    Console.WriteLine("VERY GOOD");
-                    break;
-                case 'C':
-                    Console.WriteLine("GOOD");
-                    break;
-                case 'D':
-                    Console.WriteLine("PASS");
-                    break;
-                case 'F':
-                    Console.WriteLine("FAIL");
-                    break;
-                default:
-                    Console.WriteLine("invalid grade");
-                    break;
+                    case 'B':
+                        Console.WriteLine("VERY GOOD");
+                        break;
+                    case 'C':
+                        Console.WriteLine("GOOD");
+                        break;
+                    case 'D':
+                        Console.WriteLine("PASS");
+                        break;
+                    case 'F':
+                        Console.WriteLine("FAIL");
+                        break;
+                    default:
+                        Console.WriteLine("invalid grade");
+                        break;
 
+                }
 
-
-                    Console.WriteLine("press any key to continue");
-                    string key = Console.ReadLine();
+                 exist = true;  
 
             }
+            Console.WriteLine("press any key to continue");
+            string key = Console.ReadLine();
+
         }
 
 
