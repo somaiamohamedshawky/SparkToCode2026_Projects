@@ -30,6 +30,17 @@ namespace Task1
             double perimeter = 2 * (length + width);
             Console.WriteLine("perimeter : "+ perimeter);
 
+            //Task 3 - Even or Odd Checker
+            Console.WriteLine("enter the number ");
+            int result = int.Parse(Console.ReadLine());
+            int check = result % 2;
+            if ( check == 0)
+            {
+               Console.WriteLine("the number is event");
+            }
+            else { Console.WriteLine("the numbers is odd"); }
+
+
 
 
 
